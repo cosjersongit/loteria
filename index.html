@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lotería Guatemalteca</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇬🇹 Lotería Guatemalteca 🇬🇹</h1>
+        <p class="subtitle">Tradición y Diversión en Cada Carta</p>
+    </div>
+
+    <div class="container">
+        <div class="game-area">
+            <div class="controls">
+                <button id="iniciarBtn" class="btn">🎯 Iniciar Juego</button>
+                <button id="siguienteBtn" class="btn" disabled>➡️ Siguiente</button>
+                <button id="reiniciarBtn" class="btn reiniciar">🔄 Reiniciar</button>
+            </div>
+
+            <div class="game-info" id="gameInfo" style="display: none;">
+                <h4>📊 Estadísticas del Juego</h4>
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="cartaActual">0</div>
+                        <div>Carta Actual</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="cartasRestantes">54</div>
+                        <div>Restantes</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cardDisplay" class="card-display">
+                <div class="welcome-message">
+                    <h2>¡Bienvenido a la Lotería Guatemalteca! 🎊</h2>
+                    <p>Presiona "Iniciar Juego" para comenzar</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <h3>🃏 Cartas que han salido</h3>
+            <ul id="cardsList" class="cards-list">
+                <li style="text-align: center; color: #999; font-style: italic;">Ninguna carta ha salido aún...</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js">    </script>
+</body>
+</html>
