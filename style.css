@@ -208,11 +208,12 @@ body {
         font-size: 1.1em;
     }
 
-    /* 🔥 Ajuste para botones en móviles */
+    /* Ajuste para botones en móviles */
     .controls .btn {
         display: block;
         width: 100%;
         margin: 10px 0;
+        padding: 10px;
         /* espacio arriba y abajo */
     }
 }
